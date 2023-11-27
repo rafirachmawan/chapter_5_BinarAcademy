@@ -1,0 +1,9 @@
+.navbar{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+}
+.navbar-right{
+    display: flex;
+    gap: 20px;
+}
