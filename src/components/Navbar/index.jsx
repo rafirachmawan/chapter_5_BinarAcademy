@@ -8,10 +8,14 @@ const Navbar = () => {
         <h1>Logo</h1>
       </div>
       <div className="navbar-right">
-        <p>Our Services</p>
+        <a href="">Our Services</a>
+        <a href="">Why Us</a>
+        <a href="">Testimonial</a>
+        <a href="">Faq</a>
+        {/* <p>Our Services</p>
         <p>Why Us</p>
         <p>Testimonila</p>
-        <p>Faq</p>
+        <p>Faq</p> */}
       </div>
     </div>
   );
