@@ -1,9 +1,15 @@
 .navbar{
     display: flex;
-    max-width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: #f1f3ff;
+    padding: 20px 0;
+    height: 97px;
+}
+.navbar-left{
+    padding-left: 138px;
 }
 .navbar-right{
+    padding-right: 249px;
     display: flex;
     gap: 20px;
     padding-top: 30px;
