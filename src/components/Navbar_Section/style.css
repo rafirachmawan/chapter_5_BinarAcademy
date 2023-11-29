@@ -14,10 +14,18 @@
     margin-right: 20px; /* Adjust the margin as needed */
     width: 704px;
     height: 407px;
+    background-color: #0d28a6;
+    border-radius: 6rem 0 0 0;
   }
   .btn-mulai-sewa{
     padding-left: 136px;
   }
   .text-container button{
     margin-left: 136px;
+    color: white;
+  background-color: #5cb85f;
+  border: none;
+  margin-top: 10px;
+  padding: 7px;
   }
+  
