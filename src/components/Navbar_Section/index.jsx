@@ -6,9 +6,9 @@ const Navbar_section = () => {
   return (
     <div className="navbar-container">
       <div className="text-container">
-        <p className="sewa">
+        <h3 className="sewa">
           Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
-        </p>
+        </h3>
         <p className="selamat">
           Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas
           terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu

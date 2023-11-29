@@ -4,10 +4,20 @@
   justify-content: space-between;
   font-family: arial;
   }
-  
+  .sewa{
+   padding-left: 136px;
+  }
+  .selamat{
+    padding-left: 136px;
+  }
   .logo-container {
     margin-right: 20px; /* Adjust the margin as needed */
     width: 704px;
     height: 407px;
   }
-  
+  .btn-mulai-sewa{
+    padding-left: 136px;
+  }
+  .text-container button{
+    margin-left: 136px;
+  }
