@@ -1,0 +1,35 @@
+.container-our-services{
+padding-left: 136px;
+padding-right: 136px;
+}
+.container-right-our-services{
+    
+}
+.container-right-our-services h3{
+width: 468px;
+height: 36px;
+
+font-family: Arial;
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: left;
+}
+.container-right-our-services p{
+
+font-family: Arial;
+font-size: 14px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+}
+.reason-text{
+    padding-left: 10px;
+
+}
+.card {
+    height: 100%; /* Menetapkan tinggi kartu menjadi 100% */
+  }
+  

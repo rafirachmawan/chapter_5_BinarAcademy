@@ -34,10 +34,11 @@ const OurServices = () => {
           pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting,
           dll.
         </p>
+
         {/* function */}
         <div>
           {listOurServices.map((obj) => {
-            return <p>{obj.description}</p>;
+            return <p> ☑ {obj.description}</p>;
           })}
         </div>
       </div>
