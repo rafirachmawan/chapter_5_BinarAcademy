@@ -1,20 +1,27 @@
 import React from "react";
 import { Container, Col, Row, Card } from "react-bootstrap";
 import "./style.css";
+import monkeyddragon from "../../assets/dragon.png";
+import miomio from "../../assets/mbakmio.png";
+import kiryukazuma from "../../assets/kiryu.png";
+import rating from "../../assets/stars.png";
 
 const Carousels = () => {
   let CarouselsText = [
     {
       testi: "asdadasdasdasdadadadaasdsa",
       customer: "asdasdasdasdasdasdaa",
+      image: monkeyddragon,
     },
     {
       testi: "asdasdadadaadasda",
       customer: "sadsadadadsadasda",
+      image: miomio,
     },
     {
       testi: "sadadadadaada",
       customer: "sdaasdadasadas",
+      image: kiryukazuma,
     },
   ];
   return (
@@ -28,8 +35,8 @@ const Carousels = () => {
                   <div className="carousel-item active">
                     <Card style={{ background: "#F1F3FF" }}>
                       <Card.Body>
-                        {/* <img className="testi-image" src={obj.Image} />
-                        <img src={rating} alt="rate" id="ratingcust" /> */}
+                        <img className="testi-image" src={obj.image} />
+                        <img src={rating} alt="rate" id="ratingcust" />
                         <h5>{obj.testi}</h5>
                         <h6>{obj.customer}</h6>
                       </Card.Body>

@@ -22,4 +22,6 @@
   .carousel-item h6 {
     font-size: small;
   }
-  
+  #carouselExample{
+    width: 619px;
+  }
