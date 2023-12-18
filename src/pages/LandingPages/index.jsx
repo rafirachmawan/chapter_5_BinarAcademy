@@ -6,6 +6,7 @@ import Why_us from "../../components/Why_Us";
 import Testimony from "../../components/Testimony";
 import Carousels from "../../components/Carousels";
 import CallToAction from "../../components/CallToAction";
+import Faq from "../../components/Faq";
 
 const LandingPages = () => {
   return (
@@ -17,6 +18,7 @@ const LandingPages = () => {
       <Testimony />
       <Carousels />
       <CallToAction />
+      <Faq />
     </div>
   );
 };
