@@ -7,6 +7,7 @@ import Testimony from "../../components/Testimony";
 import Carousels from "../../components/Carousels";
 import CallToAction from "../../components/CallToAction";
 import Faq from "../../components/Faq";
+import Footer from "../../components/Footer";
 
 const LandingPages = () => {
   return (
@@ -19,6 +20,7 @@ const LandingPages = () => {
       <Carousels />
       <CallToAction />
       <Faq />
+      <Footer />
     </div>
   );
 };
