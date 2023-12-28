@@ -7,11 +7,11 @@ import { useEffect, useState } from "react";
 
 const CarResult = () => {
   const [car, setCar] = useState([]);
-  const [name, setName] = useState([]);
-  const [type, setType] = useState([]);
-  const [price, setPrice] = useState([]);
-  const [status, setStatus] = useState([]);
-  const [isFilter, setIsfilter] = useState([]);
+  const [name, setName] = useState("");
+  const [type, setType] = useState("");
+  const [price, setPrice] = useState("");
+  const [status, setStatus] = useState(false);
+  const [isFilter, setFilter] = useState(false);
 
   useEffect(() => {
     handleGetCar();
@@ -59,22 +59,22 @@ const CarResult = () => {
       <div className="search-dropdown">
         <div>
           <p>Nama Mobil</p>
-          <input onChange={handleChangeName} placeholder="cari mobil" />
+          <input onChange={handleChangeName} placeholder=" cari mobil" />
         </div>
         <div>
           <p>Kategori</p>
           <select onChange={handleSelectType}>
             <option value={""}>Masukan Kapasitas Mobil</option>
             <option value={"medium"}>Medium</option>
-            <option value={"large"}>large</option>
+            <option value={"large"}>Large</option>
           </select>
         </div>
         <div>
           <p>Harga</p>
           <select onChange={handleSelectPrice}>
             <option value={""}>Masukan Harga Sewa Perhari</option>
-            <option value={"50000"}>{"<700.000"}</option>
-            <option value={"350000"}>{"<350.000"}</option>
+            <option value={"500000"}>{"<700.000"}</option>
+            <option value={"350000"}> {"<350.000"}</option>
             <option value={"330000"}>{"<330.000"}</option>
           </select>
         </div>
@@ -82,8 +82,8 @@ const CarResult = () => {
           <p>Status</p>
           <select value={status} onChange={handleSelectStatus}>
             <option value={""}>Status</option>
-            <option value={"false"}>Avalaible</option>
-            <option value={"350000"}>NotAvalaible</option>
+            <option value={"false"}>Available</option>
+            <option value={"true"}>Not Available</option>
           </select>
         </div>
         <div>
@@ -95,7 +95,6 @@ const CarResult = () => {
           </button>
         </div>
       </div>
-
       <div className="car-list">
         {car.map((item) => (
           <Container>
@@ -103,19 +102,18 @@ const CarResult = () => {
               <Col>
                 <Card>
                   <Card.Body>
-                    <Card.img src={item.image} />
+                    <Card.Img src={item.image} />
                     <Card.Title>
                       <h4>{item.name}</h4>
                       <h5>{item.price}</h5>
                       <h6>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Explicabo atque velit tempora natus modi delectus
-                        amet labore voluptatum doloremque adipisci ullam, a
-                        itaque repudiandae hic.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.{" "}
                       </h6>
                     </Card.Title>
                     <Link to={`/detail/${item.id}`}>
-                      <button variant="success"> Pilih Mobil</button>
+                      <button variant="success">Pilih Mobil</button>
                     </Link>
                   </Card.Body>
                 </Card>

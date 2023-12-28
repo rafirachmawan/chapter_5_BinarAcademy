@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { Container, Card } from "react-bootstrap";
@@ -25,7 +24,6 @@ const DetailCar = () => {
       })
       .catch((err) => console.log(err));
   };
-
   let includeList = [
     { include: "Apa saja yang termasuk dalam paket misal durasi max 12 jam" },
     { include: "Sudah termasuk bensin selama 12 jam" },
