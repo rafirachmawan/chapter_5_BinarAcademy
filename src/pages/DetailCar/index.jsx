@@ -24,6 +24,7 @@ const DetailCar = () => {
       })
       .catch((err) => console.log(err));
   };
+
   let includeList = [
     { include: "Apa saja yang termasuk dalam paket misal durasi max 12 jam" },
     { include: "Sudah termasuk bensin selama 12 jam" },
@@ -58,6 +59,7 @@ const DetailCar = () => {
     },
     { rules: "Tidak termasuk akomodasi penginapan" },
   ];
+
   return (
     <div>
       <Navbar />
